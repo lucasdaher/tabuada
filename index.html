@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tabuada</title>
+</head>
+<body>
+    <!-- Cabeçalho & Barra de Navegação -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <h1>@lucasdaher.dev</h1>
+        </div>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Redirecionar para Tabuada -->
+            <a href="#"><p>Tabuada</p></a>
+            <!-- Redirecionar para Calculadora -->
+            <a href="#"><p>Calculadora</p></a>
+            <!-- Redirecionar para Login -->
+            <a href="#"><p>Login Page</p></a>
+        </div>
+    </header>
+
+    <!-- Seção com formulário -->
+    <section>
+        <div class="container">
+            <div class="tabuada-title">
+                <h1>TABUADA 🧠</h1>
+                <p>Tire suas dúvidas sobre tabuada</p>
+            </div>
+            <div class="tabuada-form">
+                <div class="form">
+                    <label for="firstArgument">De qual número você gostaria de saber a tabuada?</label><br>
+                    <input type="text" name="firstArgument" id="firstArgument" placeholder="Digite o número" required>
+                </div>
+
+                <div class="form">
+                    <label for="secondArgument">Até qual valor você quer saber?</label><br>
+                    <input type="text" name="secondArgument" id="secondArgument" placeholder="Digite o número" required>
+                </div>
+
+                <button type="submit" id="calculate-btn">Calcular</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <h5 id="footer-copy-text">Todos os direitos reservados para Lucas Daher &copy;</h5>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
