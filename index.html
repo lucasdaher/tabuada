@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,10 +21,6 @@
         <div class="navbar">
             <!-- Redirecionar para Tabuada -->
             <a href="#"><p>Tabuada</p></a>
-            <!-- Redirecionar para Calculadora -->
-            <a href="#"><p>Calculadora</p></a>
-            <!-- Redirecionar para Login -->
-            <a href="#"><p>Login Page</p></a>
         </div>
     </header>
 
@@ -36,17 +33,24 @@
             </div>
             <div class="tabuada-form">
                 <div class="form">
-                    <label for="firstArgument">De qual número você gostaria de saber a tabuada?</label><br>
-                    <input type="text" name="firstArgument" id="firstArgument" placeholder="Digite o número" required>
+                    <form action="">
+                        <label for="firstArgument">De qual número você gostaria de saber a tabuada?</label>
+                        <input type="number" name="firstArgument" id="firstArgument" placeholder="Digite um número" required>
+                    </form>
                 </div>
 
                 <div class="form">
-                    <label for="secondArgument">Até qual valor você quer saber?</label><br>
-                    <input type="text" name="secondArgument" id="secondArgument" placeholder="Digite o número" required>
+                    <form action="">
+                        <label for="secondArgument">Até qual número você quer saber?</label>
+                        <input type="number" name="secondArgument" id="secondArgument" placeholder="Digite um número" required>
+                    </form>
                 </div>
 
-                <button type="submit" id="calculate-btn">Calcular</button>
+                <button type="submit" id="calculate-btn" onclick="calculateTabuada()">Calcular</button>
+                <div id="result-value" style="display:none;"></div>
             </div>
+
+            
         </div>
     </section>
 

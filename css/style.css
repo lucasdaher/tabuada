@@ -8,6 +8,195 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    /* Background Colors | Main Colors */
+    --primary-color: #403E3F;
+    --input-background-color: #403E3F;
+    /* Use to Buttons */
+    --secondary-color: #2793F2;
+
+    /* Hover */
+    --secondary-color-hover: #22A2F2;
+
+    /* Complementary Colors | Other Colors */
+    --black-color: #1d1d1d;
+    --white-color: #F9F9F9;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+/* Header */
+header {
+    background-color: var(--black-color);
+
+    width: 100%;
+    height: 118px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 230px;
+}
+
+header .navbar {
+    display: flex;
+    gap: 20px;
+}
+
+header .logo {
+    color: var(--white-color);
+}
+
+header .navbar a {
+    text-decoration: none;
+    color: var(--white-color);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 10px 15px;
+    transition: all 300ms ease;
+}
+
+header .navbar a:hover {
+    color: var(--secondary-color-hover);
+
+    transform: translateY(-2%);
+}
+
 header .logo h1 {
     font-family: 'Titillium Web', sans-serif;
+    padding: 10px 15px;
+}
+
+/* Section - Form */
+section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    width: 60%;
+
+    margin: 0 auto;
+
+    background-color: var(--black-color);
+    color: var(--white-color);
+
+    border-radius: 16px;
+}
+
+section .container .tabuada-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section .container .tabuada-title h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+section .container .tabuada-title p {
+    font-size: 18px;
+}
+
+section .container .tabuada-form .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 40px;
+}
+
+section .container .tabuada-form .form form label {
+    color: var(--white-color);
+
+    font-weight: 600;
+    font-size: 20px;
+}
+
+section .container .tabuada-form .form form input {
+    width: 100%;
+    height: 48px;
+
+    border: 0;
+    border-radius: 10px;
+
+    text-indent: 15px;
+    background-color: var(--input-background-color);
+    color: var(--white-color);
+}
+
+section .container .tabuada-form .form form input:hover {
+    padding-right: 15px;
+}
+
+section .container .tabuada-form .form form input:focus {
+    outline: 0;
+    border: 0;
+
+    padding-right: 15px;
+}
+
+section .container .tabuada-form .form form input::placeholder {
+    color: var(--white-color);
+    opacity: .4;
+}
+
+section .container {
+    gap: 10px;
+}
+
+section .container .tabuada-form #calculate-btn {
+    border: 0;
+    border-radius: 50px;
+
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 20px;
+
+    width: 100%;
+    height: 50px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section .container .tabuada-form #calculate-btn:hover {
+
+    background-color: var(--white-color);
+    color: var(--black-color);
+
+    transform: translateY(-2%);
+}
+
+section .container #result-value {
+    text-align: center;
+    margin-top: 40px;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    margin-top: 230px;
+
+    background-color: var(--black-color);
+    color: var(--white-color);
+
+    text-align: center;
+    padding: 100px;
+}
+
+footer #footer-copy-text {
+    font-size: 16px;
 }
